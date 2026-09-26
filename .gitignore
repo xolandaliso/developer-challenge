@@ -156,6 +156,8 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+# my custom named virtual environment
+dev-challenge/
 
 # Spyder project settings
 .spyderproject
