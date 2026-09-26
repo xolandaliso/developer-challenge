@@ -1,0 +1,29 @@
+services:
+  hr_mock:
+    build: ./hr_mock_service
+    ports:
+      - "8001:8001"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8001/health')"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DJANGO_SECRET_KEY: local-docker-secret-change-me
+      DJANGO_DEBUG: "false"
+      DJANGO_ALLOWED_HOSTS: "*"
+      HR_API_URL: http://hr_mock:8001/employees
+      SQLITE_PATH: /app/data/db.sqlite3
+    volumes:
+      - sqlite_data:/app/data
+    depends_on:
+      hr_mock:
+        condition: service_healthy
+
+volumes:
+  sqlite_data:
