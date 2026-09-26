@@ -1,0 +1,74 @@
+[
+    {
+      "employee_id": "EMP10452",
+      "first_name": "Amira",
+      "last_name": "Khan",
+      "email": "amira.khan@company.com",
+      "department": "Data & AI",
+      "location": "Cape Town",
+      "status": "Active"
+    },
+    {
+      "employee_id": "EMP10488",
+      "first_name": "Thabo",
+      "last_name": "Mokoena",
+      "email": "Thabo.Mokoena@Company.COM",
+      "department": "Data and AI",
+      "location": "CPT",
+      "status": "Active"
+    },
+    {
+      "employee_id": "",
+      "first_name": "Lindiwe",
+      "last_name": "Zulu",
+      "email": "lindiwe.zulu@company.com",
+      "department": "Finance",
+      "location": "Johannesburg",
+      "status": "Active"
+    },
+    {
+      "employee_id": "EMP20001",
+      "first_name": "Sipho",
+      "last_name": "Nkosi",
+      "email": "sipho.nkosi@company.com",
+      "department": "Engineering",
+      "location": "JHB",
+      "status": "Active"
+    },
+    {
+      "employee_id": "EMP20001",
+      "first_name": "Sipho",
+      "last_name": "Nkosi",
+      "email": "sipho.nkosi@company.com",
+      "department": "Engineering",
+      "location": "Johannesburg",
+      "status": "Active"
+    },
+    {
+      "employee_id": "EMP20004",
+      "first_name": "Grace",
+      "last_name": "Molefe",
+      "email": "grace.molefe@company.com",
+      "department": "HR",
+      "location": "Pretoria",
+      "status": "Inactive"
+    },
+    {
+      "employee_id": "EMP20005",
+      "first_name": "Pieter",
+      "last_name": "van Wyk",
+      "email": "pieter.vanwyk@company.com",
+      "department": "Sales",
+      "location": "Durban",
+      "status": "On Secondment"
+    },
+    "this-record-is-not-even-an-object",
+    {
+      "first_name": "Unknown",
+      "last_name": "Person",
+      "department": "Operations",
+      "location": "Cape Town",
+      "status": "Active"
+    }
+  ]
+  
